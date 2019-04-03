@@ -26,29 +26,9 @@ const App = () => (
     <GlobalStyle />
     <Title primary>Hello World, this is my first styled component!</Title>
     <Body>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
-      <Title>Hello World, this is my first styled component!</Title>
+      {[...Array(100)].map((_, key) => (
+        <Title key={key}>Hello World, this is my first styled component!</Title>
+      ))}
     </Body>
     <Title primary>Hello World, this is my first styled component!</Title>
   </Wrapper>
